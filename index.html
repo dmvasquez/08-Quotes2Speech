@@ -11,9 +11,8 @@
 		<!-- Sweet Alert CSS -->
 		<link rel="stylesheet" type="text/css" href="bower_components/sweetalert/dist/sweetalert.css">
 		<link rel="stylesheet" type="text/css" href="styles.css">
-
-
 	</head>
+
 	<body ng-controller='QuoteController as quote'>
 		<!-- Main Container -->
 		<div class="">
@@ -23,23 +22,24 @@
 			</div>
 			<div class="row">
 				<!-- Button Div -->
-				<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3" style="margin-top: 20em;">
+				<div class="col-md-2 col-xs-2"></div>
+				<div class="col-md-8 col-xs-8" style="margin: 8em auto;">
 
 					<!-- Button 1 -->
-					<div class="col-md-6 col-xs-6">
+					<div class="col-md-6 col-xs-6" style="text-align: center">
 						<button ng-click="quote.findMovieQuote()" class="btn btn-primary">Movies</button>
 					</div>
 
 					<!-- Button 2 -->
-					<div class="col-md-6 col-xs-6">
+					<div class="col-md-6 col-xs-6" style="text-align: center">
 						<button ng-click="quote.findFamousQuote()" class="btn btn-primary">Famous People</button>
 					</div>
-
 				</div>
+				<div class="col-md-2 col-xs-2"></div>
 			</div>
 			<div class="col-md-12" style="text-align: center; margin: 2em">
 			<div>
-				<p ng-if="quote.hide == 1">{{quote.resultsMovie.quote}}</p> 
+				<p ng-if="quote.hide == 1">{{quote.resultsMovie}}</p> 
 				<p ng-if="quote.hide == 0">{{quote.resultsFamous.quote}}</p> 
 			</div>
 			</div>

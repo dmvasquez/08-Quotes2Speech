@@ -1,0 +1,11 @@
+.background {
+	background-image: url(http://www.hdwallpaperup.com/wp-content/uploads/2015/07/Background-Texture-HD-Wallpaper.jpg);
+	opacity: 0.5;
+	background-size: cover;
+	background-repeat: repeat;
+	z-index: 1;
+}
+
+div {
+	z-index: 2
+}
